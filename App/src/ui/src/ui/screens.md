@@ -1,4 +1,3 @@
-
 # Third AI Screens
 
 ## Main Screens
@@ -13,3 +12,4 @@
 3. Settings Screen
 - App settings
 - User preferences
+
