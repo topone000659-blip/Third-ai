@@ -2,7 +2,6 @@ package com.thirdai.app;
 
 import android.app.Activity;
 import android.os.Bundle;
-import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
 public class SettingsActivity extends Activity {
@@ -28,11 +27,8 @@ public class SettingsActivity extends Activity {
 
         ListView listView = findViewById(R.id.settingsList);
 
-        ArrayAdapter<String> adapter = new ArrayAdapter<>(
-                this,
-                android.R.layout.simple_list_item_1,
-                settings
-        );
+        SettingsAdapter adapter =
+                new SettingsAdapter(this, settings);
 
         listView.setAdapter(adapter);
     }
