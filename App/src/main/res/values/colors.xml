@@ -1,1 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
 
+<resources>
+
+    <color name="third_dark">#0B0F19</color>
+    <color name="third_blue">#3B82F6</color>
+    <color name="third_white">#FFFFFF</color>
+    <color name="third_gray">#9CA3AF</color>
+
+</resources>
