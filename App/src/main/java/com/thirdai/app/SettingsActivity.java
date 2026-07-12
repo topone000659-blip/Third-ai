@@ -2,6 +2,7 @@ package com.thirdai.app;
 
 import android.app.Activity;
 import android.os.Bundle;
+import android.content.Intent;
 import android.widget.ListView;
 
 public class SettingsActivity extends Activity {
@@ -31,5 +32,47 @@ public class SettingsActivity extends Activity {
                 new SettingsAdapter(this, settings);
 
         listView.setAdapter(adapter);
+
+
+        listView.setOnItemClickListener((parent, view, position, id) -> {
+
+            Intent intent = null;
+
+            switch (position) {
+
+                case 0:
+                    intent = new Intent(this, ProfileActivity.class);
+                    break;
+
+                case 1:
+                    intent = new Intent(this, AISettingsActivity.class);
+                    break;
+
+                case 2:
+                    intent = new Intent(this, AppearanceActivity.class);
+                    break;
+
+                case 3:
+                    intent = new Intent(this, LanguageActivity.class);
+                    break;
+
+                case 4:
+                    intent = new Intent(this, NotificationActivity.class);
+                    break;
+
+                case 5:
+                    intent = new Intent(this, ChatHistoryActivity.class);
+                    break;
+
+                case 9:
+                    intent = new Intent(this, AboutActivity.class);
+                    break;
+            }
+
+            if (intent != null) {
+                startActivity(intent);
+            }
+
+        });
     }
 }
