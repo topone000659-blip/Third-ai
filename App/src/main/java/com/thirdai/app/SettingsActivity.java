@@ -1,8 +1,8 @@
 package com.thirdai.app;
 
 import android.app.Activity;
-import android.os.Bundle;
 import android.content.Intent;
+import android.os.Bundle;
 import android.widget.ListView;
 
 public class SettingsActivity extends Activity {
@@ -23,16 +23,12 @@ public class SettingsActivity extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
         setContentView(R.layout.activity_settings);
 
         ListView listView = findViewById(R.id.settingsList);
 
-        SettingsAdapter adapter =
-                new SettingsAdapter(this, settings);
-
+        SettingsAdapter adapter = new SettingsAdapter(this, settings);
         listView.setAdapter(adapter);
-
 
         listView.setOnItemClickListener((parent, view, position, id) -> {
 
@@ -62,6 +58,18 @@ public class SettingsActivity extends Activity {
 
                 case 5:
                     intent = new Intent(this, ChatHistoryActivity.class);
+                    break;
+
+                case 6:
+                    intent = new Intent(this, ClearChatsActivity.class);
+                    break;
+
+                case 7:
+                    intent = new Intent(this, PrivacyActivity.class);
+                    break;
+
+                case 8:
+                    intent = new Intent(this, DownloadsActivity.class);
                     break;
 
                 case 9:
