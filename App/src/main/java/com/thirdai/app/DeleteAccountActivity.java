@@ -2,7 +2,7 @@ package com.thirdai.app;
 
 import android.os.Bundle;
 
-import androidxActivity;
+import androidxActivity
 
 public class DeleteAccountActivity extends AppActivity {
 
