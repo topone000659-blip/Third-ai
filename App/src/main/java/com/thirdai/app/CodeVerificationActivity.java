@@ -8,7 +8,7 @@ import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-public class CodeVerificationActivity extends AppCompatActivity {
+public class CodeVerificationActivity extends Activity {
 
     private EditText codeEditText;
     private Button verifyButton;
