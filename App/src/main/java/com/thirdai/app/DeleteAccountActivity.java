@@ -2,9 +2,9 @@ package com.thirdai.app;
 
 import android.os.Bundle;
 
-import androidx.appcompat.app.AppCompatActivity;
+import androidx.Activity;
 
-public class DeleteAccountActivity extends AppCompatActivity {
+public class DeleteAccountActivity extends AppActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
