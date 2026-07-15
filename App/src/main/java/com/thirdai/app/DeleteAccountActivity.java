@@ -1,6 +1,7 @@
 package com.thirdai.app;
 
 import android.os.Bundle;
+
 import androidx.appcompat.app.AppCompatActivity;
 
 public class DeleteAccountActivity extends AppCompatActivity {
@@ -10,5 +11,5 @@ public class DeleteAccountActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_delete_account);
     }
-}
 
+}
