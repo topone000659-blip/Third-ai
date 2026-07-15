@@ -40,6 +40,16 @@
             android:name=".PrivacyActivity"
             android:exported="false"/>
 
+        <!-- Added -->
+        <activity
+            android:name=".CodeVerificationActivity"
+            android:exported="false"/>
+
+        <!-- Added -->
+        <activity
+            android:name=".DeleteAccountActivity"
+            android:exported="false"/>
+
         <activity
             android:name=".DownloadsActivity"
             android:exported="false"/>
