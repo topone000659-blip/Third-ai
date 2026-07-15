@@ -6,7 +6,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
-import androidxActivity
+import androidx Activity.
 
 public class CodeVerificationActivity extends Activity {
 
